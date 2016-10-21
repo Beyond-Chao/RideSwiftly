@@ -27,6 +27,23 @@ class MainMapViewController: BaseViewController {
         }
     }
     
+    // MARK: Action Method
+    
+    @IBAction func personalItemClick(_ sender: UIBarButtonItem) {
+        
+        let storyboard = UIStoryboard(name: "Personal", bundle: nil)
+        let personalVC = storyboard.instantiateViewController(withIdentifier: "PersonalViewController")
+        navigationController?.pushViewController(personalVC, animated: true)
+    }
+    
+    @IBAction func LoginItemClick(_ sender: UIBarButtonItem) {
+        
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        navigationController?.pushViewController(loginVC, animated: true)
+    }
+
+    
     // MARK: Lazy Load
     
     fileprivate lazy var mainMapView: MAMapView = {
@@ -42,10 +59,6 @@ class MainMapViewController: BaseViewController {
         return mapView
     }()
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 
 // MARK: MAMapViewDelegate
