@@ -1,0 +1,6 @@
+framework module Pods_RideSwiftly {
+  umbrella header "Pods-RideSwiftly-umbrella.h"
+
+  export *
+  module * { export * }
+}
