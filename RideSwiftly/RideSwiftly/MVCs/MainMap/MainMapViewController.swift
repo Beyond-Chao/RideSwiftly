@@ -14,7 +14,10 @@ class MainMapViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         initialSbuviews()
+        
+        MainBikeModel.fetchNearbyBike()
     }
 
     // MARK: - Initialization

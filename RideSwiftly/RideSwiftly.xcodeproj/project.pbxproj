@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4924BA621DD17A22009885C6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924BA611DD17A22009885C6 /* NetworkService.swift */; };
 		495E16E11DB8F647003222A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E16E01DB8F647003222A1 /* AppDelegate.swift */; };
 		495E16E61DB8F647003222A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E16E41DB8F647003222A1 /* Main.storyboard */; };
 		495E16E81DB8F647003222A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E16E71DB8F647003222A1 /* Assets.xcassets */; };
 		495E16EB1DB8F647003222A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E16E91DB8F647003222A1 /* LaunchScreen.storyboard */; };
+		498504B31DD1A0A90033D5D1 /* MainBikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498504B21DD1A0A90033D5D1 /* MainBikeModel.swift */; };
 		49A77B291DB9ACEC00C5BD79 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A77B281DB9ACEC00C5BD79 /* BaseViewController.swift */; };
 		49A77B2B1DB9AD2E00C5BD79 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A77B2A1DB9AD2E00C5BD79 /* MainMapViewController.swift */; };
 		49A77B321DB9BD6500C5BD79 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A77B311DB9BD6500C5BD79 /* BaseNavigationViewController.swift */; };
@@ -23,12 +25,14 @@
 
 /* Begin PBXFileReference section */
 		07172ED394A04C118060C6C9 /* Pods_RideSwiftly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideSwiftly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4924BA611DD17A22009885C6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		495E16DD1DB8F647003222A1 /* RideSwiftly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideSwiftly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E16E01DB8F647003222A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495E16E51DB8F647003222A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495E16E71DB8F647003222A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495E16EA1DB8F647003222A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		495E16EC1DB8F647003222A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498504B21DD1A0A90033D5D1 /* MainBikeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBikeModel.swift; sourceTree = "<group>"; };
 		49A77B281DB9ACEC00C5BD79 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		49A77B2A1DB9AD2E00C5BD79 /* MainMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
 		49A77B2D1DB9AE5800C5BD79 /* RideSwiftly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RideSwiftly-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -90,6 +94,21 @@
 			path = RideSwiftly;
 			sourceTree = "<group>";
 		};
+		498504B01DD1A0990033D5D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				498504B21DD1A0A90033D5D1 /* MainBikeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		498504B11DD1A0990033D5D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		49A77B211DB9ACB100C5BD79 /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				49A77B2A1DB9AD2E00C5BD79 /* MainMapViewController.swift */,
+				498504B01DD1A0990033D5D1 /* Model */,
+				498504B11DD1A0990033D5D1 /* View */,
 			);
 			path = MainMap;
 			sourceTree = "<group>";
@@ -143,6 +164,7 @@
 		49A77B271DB9ACB100C5BD79 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4924BA611DD17A22009885C6 /* NetworkService.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -297,6 +319,8 @@
 				49A77B381DB9BEC000C5BD79 /* LoginViewController.swift in Sources */,
 				49A77B3A1DB9BECC00C5BD79 /* PersonalViewController.swift in Sources */,
 				49A77B321DB9BD6500C5BD79 /* BaseNavigationViewController.swift in Sources */,
+				4924BA621DD17A22009885C6 /* NetworkService.swift in Sources */,
+				498504B31DD1A0A90033D5D1 /* MainBikeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +445,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FNMZGAU936;
 				INFOPLIST_FILE = RideSwiftly/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondchao.RideSwiftly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,7 +463,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = FNMZGAU936;
 				INFOPLIST_FILE = RideSwiftly/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.beyondchao.RideSwiftly;
 				PRODUCT_NAME = "$(TARGET_NAME)";

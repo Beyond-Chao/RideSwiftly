@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
 target 'RideSwiftly' do
@@ -7,4 +7,6 @@ target 'RideSwiftly' do
     pod 'AMapSearch', '4.2.0'
     pod 'AMapLocation', '~> 2.1.1'
     pod 'SnapKit', '~> 3.0.2'
+    pod 'Alamofire', '~> 4.0'
+    pod 'SwiftyJSON'
 end
